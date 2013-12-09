@@ -1,0 +1,21 @@
+[user]
+	name = Peter Mellett
+	email = peter.mellett@macace.net
+[core]
+	excludesfile = /Users/peter/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current
+[color "status"]
+	added = green
+	modified = yellow
+	untracked = red
+	changed = yellow
+	updated = yellow
+[color]
+	status = auto
