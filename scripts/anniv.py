@@ -13,7 +13,7 @@
 import datetime
 
 # Name of the text file containing your anniversary dates
-afile = '/Users/peter/.anniversaries'
+afile = '~/.anniversaries'
 
 
 # The number of days into the future to look (e.g., 30 to show
