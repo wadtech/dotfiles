@@ -2,7 +2,7 @@
 	name = Peter Mellett
 	email = peter.mellett@macace.net
 [core]
-	excludesfile = /Users/peter/.gitignore_global
+	excludesfile = /opt/boxen/config/git/gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -19,3 +19,6 @@
 	updated = yellow
 [color]
 	status = auto
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
