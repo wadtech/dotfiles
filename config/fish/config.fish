@@ -2,4 +2,4 @@ if status --is-interactive
     show_anniversaries
 end
 
-load_boxen
+source $HOME/.config/fish/boxen.fish

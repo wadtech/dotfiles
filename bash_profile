@@ -1,5 +1,4 @@
 alias weberr='tail -f /var/log/apache2/error_log'
-alias dblog='tail -f /usr/local/var/mysql/Peters-iMac.log'
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -41,4 +40,8 @@ PS1='\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]\u@\[${c_red}\]\w\[${c_s
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
+fi
+
+if [ -f /opt/boxen/env.sh ]; then
+  . /opt/boxen/env.sh
 fi
