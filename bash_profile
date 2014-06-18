@@ -38,6 +38,9 @@ branch_color ()
 
 PS1='\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]\u@\[${c_red}\]\w\[${c_sgr0}\]: '
 
+export GOPATH=$HOME/src/go
+export PATH=$PATH:$GOPATH/bin
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
