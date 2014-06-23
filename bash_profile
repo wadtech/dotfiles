@@ -52,3 +52,15 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+$HOME/.anniv.py > $HOME/.anniv.cache
+
+if [ -s $HOME/.anniv.cache ]
+then
+  THING=$(cat $HOME/.anniv.cache)
+else
+  THING=$(fortune)
+fi
+
+echo $THING | cowsay | lolcat
+
