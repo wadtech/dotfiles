@@ -63,4 +63,4 @@ else
 fi
 
 echo $THING | cowsay | lolcat
-
+alias be="bundle exec"
